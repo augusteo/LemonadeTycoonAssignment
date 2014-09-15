@@ -13,6 +13,7 @@
 		EE52B8E819C664D900912780 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE52B8E719C664D900912780 /* Images.xcassets */; };
 		EE52B8EB19C664D900912780 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE52B8E919C664D900912780 /* LaunchScreen.xib */; };
 		EE52B8F719C664D900912780 /* LemonadeTycoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE52B8F619C664D900912780 /* LemonadeTycoonTests.swift */; };
+		EEEB360019C680A8001588B1 /* customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEB35FF19C680A8001588B1 /* customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		EE52B8F019C664D900912780 /* LemonadeTycoonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonadeTycoonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE52B8F519C664D900912780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE52B8F619C664D900912780 /* LemonadeTycoonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeTycoonTests.swift; sourceTree = "<group>"; };
+		EEEB35FF19C680A8001588B1 /* customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				EE52B8E719C664D900912780 /* Images.xcassets */,
 				EE52B8E919C664D900912780 /* LaunchScreen.xib */,
 				EE52B8DE19C664D900912780 /* Supporting Files */,
+				EEEB35FF19C680A8001588B1 /* customer.swift */,
 			);
 			path = LemonadeTycoon;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				EE52B8E319C664D900912780 /* ViewController.swift in Sources */,
 				EE52B8E119C664D900912780 /* AppDelegate.swift in Sources */,
+				EEEB360019C680A8001588B1 /* customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +411,7 @@
 				EE52B8FC19C664D900912780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE52B8FD19C664D900912780 /* Build configuration list for PBXNativeTarget "LemonadeTycoonTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				EE52B8FF19C664D900912780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
