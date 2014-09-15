@@ -18,59 +18,89 @@ class ViewController: UIViewController  {
     @IBOutlet weak var mixLemonLabel: UILabel!
     @IBOutlet weak var mixIceLabel: UILabel!
 
-    var money:Int = 10
-    var lemon:Int = 1
-    var ice:Int = 1
-    var buyLemon:Int = 0
-    var buyIce:Int = 0
-    var mixLemon:Int = 0
-    var mixIce:Int = 0
+    var money = 10
+    var lemon = 1
+    var ice = 1
+    var buyLemon = 0
+    var buyIce = 0
+    var mixLemon = 0
+    var mixIce = 0
+    let priceLemon = 2
+    let priceIce = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.moneyLabel.text = "\(self.money)"
-        self.lemonLabel.text = "\(self.lemon)"
-        self.iceLabel.text = "\(self.ice)"
+        
+        updateInventory()
         
     }
     @IBAction func addBuyLemonButtonPressed(sender: AnyObject) {
-        self.buyLemonLabel.text = "\(++self.buyLemon)"
+        if money >= priceLemon{
+            buyLemonLabel.text = "\(++buyLemon)"
+            money -= priceLemon
+            lemon++
+            updateInventory()
+        }
     }
     @IBAction func subBuyLemonButtonPressed(sender: AnyObject) {
-        self.buyLemonLabel.text = "\(--self.buyLemon)"
+        if buyLemon > 0{
+            buyLemonLabel.text = "\(--buyLemon)"
+            money += priceLemon
+            lemon--
+            updateInventory()
+        }
     }
     @IBAction func addBuyIceButtonPressed(sender: AnyObject) {
-        self.buyIceLabel.text = "\(++self.buyIce)"
+        if money >= priceIce{
+            buyIceLabel.text = "\(++buyIce)"
+            money -= priceIce
+            ice++
+            updateInventory()
+        }
     }
     @IBAction func subBuyIceButtonPressed(sender: AnyObject) {
-        self.buyIceLabel.text = "\(--self.buyIce)"
+        if buyIce > 0{
+            buyIceLabel.text = "\(--buyIce)"
+            money += priceIce
+            ice--
+            updateInventory()
+        }
     }
     @IBAction func addMixLemonButtonPressed(sender: AnyObject) {
-        self.mixLemonLabel.text = "\(++self.mixLemon)"
+        mixLemonLabel.text = "\(++mixLemon)"
     }
     @IBAction func subMixLemonButtonPressed(sender: AnyObject) {
-        self.mixLemonLabel.text = "\(--self.mixLemon)"
+        if mixLemon > 0 {
+            mixLemonLabel.text = "\(--mixLemon)"
+        }
     }
     @IBAction func addMixIceButtonPressed(sender: AnyObject) {
-        self.mixIceLabel.text = "\(++self.mixIce)"
+        mixIceLabel.text = "\(++mixIce)"
     }
     @IBAction func subMixIceButtonPressed(sender: AnyObject) {
-        self.mixIceLabel.text = "\(--self.mixIce)"
+        if mixIce > 0 {
+            mixIceLabel.text = "\(--mixIce)"
+        }
     }
     @IBAction func startButtonPressed(sender: AnyObject) {
-        self.resetUI()
+        updateInventory()
+        resetUI()
     }
     func resetUI() {
-        self.buyLemon = 0
-        self.buyIce = 0
-        self.mixLemon = 0
-        self.mixIce = 0
+        buyLemon = 0
+        buyIce = 0
+        mixLemon = 0
+        mixIce = 0
         
-        self.buyLemonLabel.text = "\(self.buyLemon)"
-        self.buyIceLabel.text = "\(self.buyIce)"
-        self.mixLemonLabel.text = "\(self.mixLemon)"
-        self.mixIceLabel.text = "\(self.mixIce)"
+        buyLemonLabel.text = "\(buyLemon)"
+        buyIceLabel.text = "\(buyIce)"
+        mixLemonLabel.text = "\(mixLemon)"
+        mixIceLabel.text = "\(mixIce)"
+    }
+    func updateInventory() {
+        moneyLabel.text = "$\(money) Cash"
+        lemonLabel.text = "\(lemon) Lemons"
+        iceLabel.text = "\(ice) Ice Cubes"
     }
 
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F6FA909E-E696-4FCF-A309-CBC900DA31F4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LemonadeTycoon</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6CFAD2C5FDDDEBFE16935B7EA89DF9557642D64E</key>
+		<string>https://github.com/augusteo/LemonadeTycoonAssignment.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LemonadeTycoon.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6CFAD2C5FDDDEBFE16935B7EA89DF9557642D64E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/augusteo/LemonadeTycoonAssignment.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6CFAD2C5FDDDEBFE16935B7EA89DF9557642D64E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6CFAD2C5FDDDEBFE16935B7EA89DF9557642D64E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LemonadeTycoon</string>
+		</dict>
+	</array>
+</dict>
+</plist>
